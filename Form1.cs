@@ -16,11 +16,21 @@ namespace cantina_1._0
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            listBox1.Items.Add(new Descricao("Feijoada de lata", 8.00));
-            listBox1.Items.Add(new Descricao("Laranja", 2.00));
-            listBox1.Items.Add(new Descricao("Pudim", 5.00));
-            listBox1.Items.Add(new Descricao("Amendoim", 4.00));
-            listBox1.Items.Add(new Descricao("Coca de lata", 6.00));
+            listBox1.Items.Add(new Descricao("Coxinha", 5.00));
+            listBox1.Items.Add(new Descricao("Pastel de Carne", 6.00));
+            listBox1.Items.Add(new Descricao("Pastel de Queijo", 5.50));
+            listBox1.Items.Add(new Descricao("Refrigerante Lata", 4.50));
+            listBox1.Items.Add(new Descricao("Suco Natural (300ml)", 3.00));
+            listBox1.Items.Add(new Descricao("Pão de Queijo", 3.50));
+            listBox1.Items.Add(new Descricao("Hambúrguer Simples", 8.00));
+            listBox1.Items.Add(new Descricao("Hambúrguer com Queijo", 9.00));
+            listBox1.Items.Add(new Descricao("X-Tudo", 12.00));
+            listBox1.Items.Add(new Descricao("Água Mineral (500ml)", 2.50));
+
+
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
