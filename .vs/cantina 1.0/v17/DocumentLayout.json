@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\documents\\cantinaprojeto\\cantinadodiabo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\documents\\cantinaprojeto\\cantinadodiabo\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\documents\\cantinaprojeto\\cantinadodiabo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,19 +27,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\25163133\\Documents\\cantinaprojeto\\cantinadodiabo\\Class1.cs",
-              "RelativeDocumentMoniker": "Class1.cs",
-              "ToolTip": "C:\\Users\\25163133\\Documents\\cantinaprojeto\\cantinadodiabo\\Class1.cs",
-              "RelativeToolTip": "Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T11:17:40.496Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\25163133\\Documents\\cantinaprojeto\\cantinadodiabo\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -48,6 +35,21 @@
               "ViewState": "AgIAAAwAAAAAAAAAAAAowBsAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T11:15:58.325Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\25163133\\Documents\\cantinaprojeto\\cantinadodiabo\\Class1.cs",
+              "RelativeDocumentMoniker": "Class1.cs",
+              "ToolTip": "C:\\Users\\25163133\\Documents\\cantinaprojeto\\cantinadodiabo\\Class1.cs",
+              "RelativeToolTip": "Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:17:40.496Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
