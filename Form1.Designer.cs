@@ -44,9 +44,8 @@
             label3 = new Label();
             textBox1 = new TextBox();
             label4 = new Label();
-            label5 = new Label();
-            textBox2 = new TextBox();
             comboBox1 = new ComboBox();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericQuant).BeginInit();
             SuspendLayout();
@@ -85,7 +84,7 @@
             // button2
             // 
             button2.BackColor = Color.FromArgb(230, 255, 0);
-            button2.Location = new Point(458, 148);
+            button2.Location = new Point(458, 130);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 3;
@@ -151,7 +150,7 @@
             // dateTimePicker2
             // 
             dateTimePicker2.Format = DateTimePickerFormat.Time;
-            dateTimePicker2.Location = new Point(306, 418);
+            dateTimePicker2.Location = new Point(61, 389);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(200, 23);
             dateTimePicker2.TabIndex = 9;
@@ -167,7 +166,7 @@
             // 
             // numericQuant
             // 
-            numericQuant.Location = new Point(479, 116);
+            numericQuant.Location = new Point(479, 187);
             numericQuant.Name = "numericQuant";
             numericQuant.Size = new Size(39, 23);
             numericQuant.TabIndex = 11;
@@ -201,6 +200,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 15;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label4
             // 
@@ -215,25 +215,6 @@
             label4.Text = "Método";
             label4.Click += label4_Click;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ButtonHighlight;
-            label5.Location = new Point(433, 290);
-            label5.Name = "label5";
-            label5.Size = new Size(38, 16);
-            label5.TabIndex = 17;
-            label5.Text = "Troco";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(406, 313);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 18;
-            // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
@@ -241,6 +222,20 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 19;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.ButtonHighlight;
+            label6.Location = new Point(458, 168);
+            label6.Name = "label6";
+            label6.Size = new Size(69, 16);
+            label6.TabIndex = 20;
+            label6.Text = "Quantidade";
+            label6.Click += label6_Click;
             // 
             // Form1
             // 
@@ -248,9 +243,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(17, 25, 12);
             ClientSize = new Size(800, 450);
+            Controls.Add(label6);
             Controls.Add(comboBox1);
-            Controls.Add(textBox2);
-            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(textBox1);
             Controls.Add(label3);
@@ -294,8 +288,7 @@
         private Label label3;
         private TextBox textBox1;
         private Label label4;
-        private Label label5;
-        private TextBox textBox2;
         private ComboBox comboBox1;
+        private Label label6;
     }
 }

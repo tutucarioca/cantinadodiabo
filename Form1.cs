@@ -61,7 +61,7 @@ namespace cantina_1._0
                 numericQuant.Value = 0;
             }
 
-            else if (numericQuant.Value  <= 0)
+            else if (numericQuant.Value <= 0)
             {
                 MessageBox.Show("Indique uma quantidade válida");
                 numericQuant.Value = 1;
@@ -78,10 +78,12 @@ namespace cantina_1._0
         {
             if (listBox2.SelectedItem != null)
             {
+                int quant = (int)numericQuant.Value;
                 Descricao produtoSelecionado = (Descricao)listBox2.SelectedItem;
                 listBox2.Items.Remove(produtoSelecionado);
-                //total -= produtoSelecionado.Valor * produtoSelecionado;
+                total -= produtoSelecionado.Valor * produtoSelecionado.Quantidade;
                 lbltotal.Text = $"TOTAL: R$ {total:F2}";
+                numericQuant.Value = 0;
             }
             else
             {
@@ -92,10 +94,69 @@ namespace cantina_1._0
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Seu TOTAL é de : R$ {total:F2}");
-            listBox2.Items.Clear();
-            lbltotal.Text = @$"TOTAL: R$ {total = 0}";
+            
+            string nomeCliente = textBox1.Text;
+            switch (comboBox1.SelectedIndex)
+            {
+                case 0:
+                    MessageBox.Show($"Dados do Pedido: \n\n" +
+                        $"Cliente:{nomeCliente}\n\n" +
+                        $"Metódo de Pagamento: Pix\n\n" +
+                        $"Total: R$ {total}");
+                        listBox2.Items.Clear();
+                        lbltotal.Text = @$"TOTAL: R$ {total = 0}";
+                    break;
+                case 1:
+                    MessageBox.Show($"Dados do Pedido: \n\n" +
+                        $"Cliente:{nomeCliente}\n\n" +
+                        $"Metódo de Pagamento: Crédito\n\n" +
+                        $"Total: R$ {total}");
+                    listBox2.Items.Clear();
+                    lbltotal.Text = @$"TOTAL: R$ {total = 0}";
+                    break;
+                case 2:
+                    MessageBox.Show($"Dados do Pedido: \n\n" +
+                        $"Cliente:{nomeCliente}\n\n" +
+                        $"Metódo de Pagamento: Débito\n\n" +
+                        $"Total: R$ {total}");
+                    listBox2.Items.Clear();
+                    lbltotal.Text = @$"TOTAL: R$ {total = 0}";
+                    break;
+                case 3:
+                    MessageBox.Show($"Seu TOTAL é de : R$ {total:F2}");
+                    double dinheiroInt = 0;
+                    double troco = 0;
+                    while (dinheiroInt < total)
+                    {
+                        string nome = Microsoft.VisualBasic.Interaction.InputBox("Qual valor que o cliente entregou?", "Valor Troco");
+                        if (double.TryParse(nome, out dinheiroInt))
+                        {
+                            if (dinheiroInt < total)
+                            {
+                                MessageBox.Show($"Valor insuficiente. Faltam {total - dinheiroInt} R$");
+                            }
+                            else
+                            {
+                                troco = dinheiroInt - total;
+                                MessageBox.Show($"Troco: {troco} R$");
+                                listBox2.Items.Clear();
+                                lbltotal.Text = @$"TOTAL: R$ {total = 0}";
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Valor inválido.");
+                        }
+                        break;
 
+
+                    }
+                    break;
+                
+
+
+            } 
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -114,6 +175,40 @@ namespace cantina_1._0
             {
                 numericQuant.Value = 1;
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void valorTroco(object sender, EventArgs e)
+        {
+
         }
     }
 }
