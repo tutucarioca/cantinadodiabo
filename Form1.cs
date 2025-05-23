@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace cantina_1._0
 {
@@ -19,6 +21,12 @@ namespace cantina_1._0
 
         double total = 0;
 
+        public string metododepagamento;
+        
+        
+            
+
+        
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -92,72 +100,131 @@ namespace cantina_1._0
             }
         }
 
+
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            double dinheiroInt = 0;
+            double troco = 0;
             string nomeCliente = textBox1.Text;
-            switch (comboBox1.SelectedIndex)
+            string datahora = DateTime.Now.ToString("dd//MM/yyyy  HH: mm:ss");
+            string tempo = $"Data e Horário: {datahora}";
+
+            if (string.IsNullOrEmpty(nomeCliente) )
             {
-                case 0:
-                    MessageBox.Show($"Dados do Pedido: \n\n" +
-                        $"Cliente:{nomeCliente}\n\n" +
-                        $"Metódo de Pagamento: Pix\n\n" +
-                        $"Total: R$ {total}");
-                        listBox2.Items.Clear();
-                        lbltotal.Text = @$"TOTAL: R$ {total = 0}";
-                    break;
-                case 1:
-                    MessageBox.Show($"Dados do Pedido: \n\n" +
-                        $"Cliente:{nomeCliente}\n\n" +
-                        $"Metódo de Pagamento: Crédito\n\n" +
-                        $"Total: R$ {total}");
-                    listBox2.Items.Clear();
-                    lbltotal.Text = @$"TOTAL: R$ {total = 0}";
-                    break;
-                case 2:
-                    MessageBox.Show($"Dados do Pedido: \n\n" +
-                        $"Cliente:{nomeCliente}\n\n" +
-                        $"Metódo de Pagamento: Débito\n\n" +
-                        $"Total: R$ {total}");
-                    listBox2.Items.Clear();
-                    lbltotal.Text = @$"TOTAL: R$ {total = 0}";
-                    break;
-                case 3:
-                    MessageBox.Show($"Seu TOTAL é de : R$ {total:F2}");
-                    double dinheiroInt = 0;
-                    double troco = 0;
-                    while (dinheiroInt < total)
+                MessageBox.Show("Sem cliente cadastrado");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(metododepagamento))
+            {
+                MessageBox.Show("Selecione uma forma de pagamento");
+                return;
+            }
+
+            while (dinheiroInt < total)
+            {
+                
+                if (comboBox1.SelectedIndex != 3)
+                {
+                    if (viagem.Checked)
                     {
-                        string nome = Microsoft.VisualBasic.Interaction.InputBox("Qual valor que o cliente entregou?", "Valor Troco");
-                        if (double.TryParse(nome, out dinheiroInt))
+                        MessageBox.Show(@$"
+                    Dados do Pedido:
+                    PARA VIAGEM
+
+                    Cliente:{nomeCliente}
+                    Metódo de Pagamento: {metododepagamento}
+                    Total: R$ {total}
+                   
+                    {tempo}");
+                    }
+
+
+                    else
+                    {
+
+                        MessageBox.Show(@$"
+                    Dados do Pedido:
+
+                    Cliente:{nomeCliente}
+                    Metódo de Pagamento: {metododepagamento}
+                    Total: R$ {total}
+
+                    {tempo}");
+                    }
+                }
+
+
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    string nome = Microsoft.VisualBasic.Interaction.InputBox("Qual valor que o cliente entregou?", "Valor Troco");
+                    if (double.TryParse(nome, out dinheiroInt))
+                    {
+                        if (dinheiroInt < total)
                         {
-                            if (dinheiroInt < total)
-                            {
-                                MessageBox.Show($"Valor insuficiente. Faltam {total - dinheiroInt} R$");
-                            }
-                            else
-                            {
-                                troco = dinheiroInt - total;
-                                MessageBox.Show($"Troco: {troco} R$");
-                                listBox2.Items.Clear();
-                                lbltotal.Text = @$"TOTAL: R$ {total = 0}";
-                            }
+                            MessageBox.Show($"Valor insuficiente. Faltam {total - dinheiroInt} R$");
+                            return;
                         }
                         else
                         {
-                            MessageBox.Show("Valor inválido.");
+                            troco = dinheiroInt - total;
+                            MessageBox.Show($"Troco: {troco} R$");
+
                         }
-                        break;
-
-
                     }
-                    break;
-                
+                    else
+                    {
+                        MessageBox.Show("Valor inválido.");
+                    }
+                    if (viagem.Checked)
+                    {
 
+                        MessageBox.Show(@$"
+                        Dados do Pedido:
+                        PARA VIAGEM
 
-            } 
+                        Cliente:{nomeCliente}
+                        Metódo de Pagamento: {metododepagamento}
+                        Total: R$ {total} 
+                        Valor: R$ {dinheiroInt}
+                        Troco: R$ {troco}
+                        
+                        { tempo}");
+                    }
+                    else
+                    {
+                        MessageBox.Show(@$"
+                        Dados do Pedido:
+
+                        Cliente:{nomeCliente}
+                        Metódo de Pagamento: {metododepagamento}
+                        Total: R$ {total} 
+                        Valor: R$ {dinheiroInt}
+                        Troco: R$ {troco}
+                        
+                        {tempo}");
+                    }
+                }
+
+            comboBox1.SelectedIndex = -1;
+            listBox2.Items.Clear();
+                textBox1.Clear();
+                viagem.Checked = false;
+            lbltotal.Text = @$"TOTAL: R$ {total = 0}";
+                break;
+            }
             
-        }
+
+
+
+
+            }
+                   
+
+
+            
+            
+   
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -189,7 +256,22 @@ namespace cantina_1._0
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (comboBox1.SelectedIndex == 0)
+            {
+                metododepagamento = "Pix";
+            }
+            else if (comboBox1.SelectedIndex == 1)
+            {
+                metododepagamento = "Cartão de Débito";
+            }
+            else if (comboBox1.SelectedIndex == 2)
+            {
+                metododepagamento = "Cartão de Crédito";
+            }
+            else if (comboBox1.SelectedIndex == 3)
+            {
+                metododepagamento = "Dinheiro";
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

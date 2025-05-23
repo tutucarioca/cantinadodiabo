@@ -46,6 +46,7 @@
             label4 = new Label();
             comboBox1 = new ComboBox();
             label6 = new Label();
+            viagem = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericQuant).BeginInit();
             SuspendLayout();
@@ -72,7 +73,7 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(230, 255, 0);
-            button1.Font = new Font("Segoe UI", 9F);
+            button1.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.Location = new Point(458, 87);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
@@ -84,6 +85,7 @@
             // button2
             // 
             button2.BackColor = Color.FromArgb(230, 255, 0);
+            button2.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.Location = new Point(458, 130);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
@@ -95,7 +97,7 @@
             // button3
             // 
             button3.BackColor = Color.FromArgb(230, 255, 0);
-            button3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Font = new Font("Agrandir Narrow", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.Location = new Point(552, 390);
             button3.Name = "button3";
             button3.Size = new Size(202, 48);
@@ -109,10 +111,10 @@
             lbltotal.AutoSize = true;
             lbltotal.BackColor = Color.FromArgb(230, 255, 0);
             lbltotal.CausesValidation = false;
-            lbltotal.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbltotal.Location = new Point(466, 234);
+            lbltotal.Font = new Font("Agrandir Narrow", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbltotal.Location = new Point(469, 230);
             lbltotal.Name = "lbltotal";
-            lbltotal.Size = new Size(52, 25);
+            lbltotal.Size = new Size(49, 25);
             lbltotal.TabIndex = 5;
             lbltotal.Text = "Total";
             lbltotal.TextAlign = ContentAlignment.MiddleRight;
@@ -186,11 +188,11 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Agrandir Narrow", 14.2499981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(61, 290);
+            label3.Location = new Point(52, 281);
             label3.Name = "label3";
-            label3.Size = new Size(39, 16);
+            label3.Size = new Size(61, 25);
             label3.TabIndex = 13;
             label3.Text = "Nome";
             // 
@@ -206,11 +208,11 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Agrandir Narrow", 14.2499981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(211, 290);
+            label4.Location = new Point(203, 281);
             label4.Name = "label4";
-            label4.Size = new Size(50, 16);
+            label4.Size = new Size(79, 25);
             label4.TabIndex = 16;
             label4.Text = "Método";
             label4.Click += label4_Click;
@@ -228,14 +230,26 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Agrandir Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.ButtonHighlight;
             label6.Location = new Point(458, 168);
             label6.Name = "label6";
-            label6.Size = new Size(69, 16);
+            label6.Size = new Size(75, 17);
             label6.TabIndex = 20;
             label6.Text = "Quantidade";
             label6.Click += label6_Click;
+            // 
+            // viagem
+            // 
+            viagem.AutoSize = true;
+            viagem.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            viagem.ForeColor = SystemColors.ButtonHighlight;
+            viagem.Location = new Point(564, 363);
+            viagem.Name = "viagem";
+            viagem.Size = new Size(64, 20);
+            viagem.TabIndex = 21;
+            viagem.Text = "Viagem";
+            viagem.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -243,6 +257,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(17, 25, 12);
             ClientSize = new Size(800, 450);
+            Controls.Add(viagem);
             Controls.Add(label6);
             Controls.Add(comboBox1);
             Controls.Add(label4);
@@ -290,5 +305,6 @@
         private Label label4;
         private ComboBox comboBox1;
         private Label label6;
+        private CheckBox viagem;
     }
 }
