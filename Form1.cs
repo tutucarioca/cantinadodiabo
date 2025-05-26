@@ -19,6 +19,7 @@ namespace cantina_1._0
             InitializeComponent();
         }
 
+        List<Descricao> extrato = new List<Descricao>();
         double total = 0;
 
         public string metododepagamento;
@@ -63,6 +64,7 @@ namespace cantina_1._0
                 Descricao vendafeita = new Descricao(produtoSelecionado.Nome, produtoSelecionado.Valor);
                 vendafeita.Quantidade = (int)numericQuant.Value;
                 listBox2.Items.Add(vendafeita);
+                extrato.Add(vendafeita);
                 total += produtoSelecionado.Valor * quant;
                 lbltotal.Text = $" TOTAL: R$ {total:F2}";
                 listBox3.SelectedIndex = -1;
@@ -89,6 +91,7 @@ namespace cantina_1._0
                 int quant = (int)numericQuant.Value;
                 Descricao produtoSelecionado = (Descricao)listBox2.SelectedItem;
                 listBox2.Items.Remove(produtoSelecionado);
+                extrato.Remove(produtoSelecionado);
                 total -= produtoSelecionado.Valor * produtoSelecionado.Quantidade;
                 lbltotal.Text = $"TOTAL: R$ {total:F2}";
                 numericQuant.Value = 0;
@@ -108,6 +111,7 @@ namespace cantina_1._0
             string nomeCliente = textBox1.Text;
             string datahora = DateTime.Now.ToString("dd//MM/yyyy  HH: mm:ss");
             string tempo = $"Data e Horário: {datahora}";
+            
 
             if (string.IsNullOrEmpty(nomeCliente) )
             {
@@ -128,12 +132,14 @@ namespace cantina_1._0
                 {
                     if (viagem.Checked)
                     {
-                        MessageBox.Show(@$"
+                        string extratop = string.Join("\n", extrato);
+                        MessageBox.Show($@"
                     Dados do Pedido:
                     PARA VIAGEM
 
                     Cliente:{nomeCliente}
                     Metódo de Pagamento: {metododepagamento}
+                    Produtos: {extratop}
                     Total: R$ {total}
                    
                     {tempo}");
@@ -142,12 +148,13 @@ namespace cantina_1._0
 
                     else
                     {
-
+                        string extratop = string.Join("\n", extrato);
                         MessageBox.Show(@$"
                     Dados do Pedido:
 
                     Cliente:{nomeCliente}
                     Metódo de Pagamento: {metododepagamento}
+                    Produtos: {extratop}
                     Total: R$ {total}
 
                     {tempo}");
@@ -178,29 +185,29 @@ namespace cantina_1._0
                     }
                     if (viagem.Checked)
                     {
-
+                        string extratop = string.Join("\n", extrato);
                         MessageBox.Show(@$"
                         Dados do Pedido:
                         PARA VIAGEM
 
                         Cliente:{nomeCliente}
                         Metódo de Pagamento: {metododepagamento}
+                        Produtos: {extratop}
                         Total: R$ {total} 
-                        Valor: R$ {dinheiroInt}
-                        Troco: R$ {troco}
                         
                         { tempo}");
                     }
                     else
                     {
+
+                        string extratop = string.Join("\n", extrato);
                         MessageBox.Show(@$"
                         Dados do Pedido:
 
                         Cliente:{nomeCliente}
                         Metódo de Pagamento: {metododepagamento}
+                        Produtos: {extratop}
                         Total: R$ {total} 
-                        Valor: R$ {dinheiroInt}
-                        Troco: R$ {troco}
                         
                         {tempo}");
                     }
