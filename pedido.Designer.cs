@@ -1,6 +1,6 @@
 ﻿namespace cantina_1._0
 {
-    partial class Form1
+    partial class pedido
     {
         /// <summary>
         ///  Required designer variable.
@@ -47,6 +47,7 @@
             comboBox1 = new ComboBox();
             label6 = new Label();
             viagem = new CheckBox();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericQuant).BeginInit();
             SuspendLayout();
@@ -98,7 +99,7 @@
             // 
             button3.BackColor = Color.FromArgb(230, 255, 0);
             button3.Font = new Font("Agrandir Narrow", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(552, 390);
+            button3.Location = new Point(552, 364);
             button3.Name = "button3";
             button3.Size = new Size(202, 48);
             button3.TabIndex = 4;
@@ -244,19 +245,32 @@
             viagem.AutoSize = true;
             viagem.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             viagem.ForeColor = SystemColors.ButtonHighlight;
-            viagem.Location = new Point(564, 363);
+            viagem.Location = new Point(621, 338);
             viagem.Name = "viagem";
             viagem.Size = new Size(64, 20);
             viagem.TabIndex = 21;
             viagem.Text = "Viagem";
             viagem.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(230, 255, 0);
+            button4.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button4.Location = new Point(319, 389);
+            button4.Name = "button4";
+            button4.Size = new Size(181, 49);
+            button4.TabIndex = 22;
+            button4.Text = "Mandar para o balcão";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // venda
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(17, 25, 12);
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(viagem);
             Controls.Add(label6);
             Controls.Add(comboBox1);
@@ -275,7 +289,7 @@
             Controls.Add(button1);
             Controls.Add(listBox2);
             Controls.Add(pictureBox1);
-            Name = "Form1";
+            Name = "venda";
             Text = "Form1";
             TransparencyKey = Color.FromArgb(64, 64, 64);
             Load += Form1_Load;
@@ -306,5 +320,6 @@
         private ComboBox comboBox1;
         private Label label6;
         private CheckBox viagem;
+        private Button button4;
     }
 }

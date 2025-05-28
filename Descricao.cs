@@ -11,6 +11,8 @@ namespace cantina_1._0
         private string nome;
         private double valor;
         private int quantidade = 0;
+        private bool chapa;
+        private string cliente;
 
         public string Nome
         {
@@ -26,11 +28,20 @@ namespace cantina_1._0
             set { quantidade = value; }
             get { return quantidade; }
         }
-        public Descricao(string nome, double valor)
+
+        public bool Chapa
+        {
+            get { return chapa; }
+            set { chapa = value; }
+        }
+
+
+        public Descricao(string nome, double valor, bool chapa)
         {
             this.nome = nome;
             this.valor = valor;
             this.quantidade = 0;
+            this.chapa = chapa;
         }
 
         public override string ToString()

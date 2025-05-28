@@ -12,9 +12,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace cantina_1._0
 {
-    public partial class Form1 : Form
+    public partial class pedido : Form
     {
-        public Form1()
+        public pedido()
         {
             InitializeComponent();
         }
@@ -23,11 +23,11 @@ namespace cantina_1._0
         double total = 0;
 
         public string metododepagamento;
-        
-        
-            
 
-        
+
+
+
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -35,16 +35,16 @@ namespace cantina_1._0
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            listBox3.Items.Add(new Descricao("Coxinha", 5.00));
-            listBox3.Items.Add(new Descricao("Pastel de Carne", 6.00));
-            listBox3.Items.Add(new Descricao("Pastel de Queijo", 5.50));
-            listBox3.Items.Add(new Descricao("Refrigerante Lata", 4.50));
-            listBox3.Items.Add(new Descricao("Suco Natural (300ml)", 3.00));
-            listBox3.Items.Add(new Descricao("Pão de Queijo", 3.50));
-            listBox3.Items.Add(new Descricao("Hambúrguer Simples", 8.00));
-            listBox3.Items.Add(new Descricao("Hambúrguer com Queijo", 9.00));
-            listBox3.Items.Add(new Descricao("X-Tudo", 12.00));
-            listBox3.Items.Add(new Descricao("Água Mineral (500ml)", 2.50));
+            listBox3.Items.Add(new Descricao("Coxinha", 5.00, false));
+            listBox3.Items.Add(new Descricao("Pastel de Carne", 6.00, true));
+            listBox3.Items.Add(new Descricao("Pastel de Queijo", 5.50, true));
+            listBox3.Items.Add(new Descricao("Refrigerante Lata", 4.50, false));
+            listBox3.Items.Add(new Descricao("Suco Natural (300ml)", 3.00, false));
+            listBox3.Items.Add(new Descricao("Pão de Queijo", 3.50, false));
+            listBox3.Items.Add(new Descricao("Hambúrguer Simples", 8.00, true));
+            listBox3.Items.Add(new Descricao("Hambúrguer com Queijo", 9.00, true));
+            listBox3.Items.Add(new Descricao("X-Tudo", 12.00, true));
+            listBox3.Items.Add(new Descricao("Água Mineral (500ml)", 2.50, false));
 
             comboBox1.Items.Add("Pix");
             comboBox1.Items.Add("Cartão Débito");
@@ -61,7 +61,7 @@ namespace cantina_1._0
             {
                 int quant = (int)numericQuant.Value;
                 Descricao produtoSelecionado = (Descricao)listBox3.SelectedItem;
-                Descricao vendafeita = new Descricao(produtoSelecionado.Nome, produtoSelecionado.Valor);
+                Descricao vendafeita = new Descricao(produtoSelecionado.Nome, produtoSelecionado.Valor, produtoSelecionado.Chapa);
                 vendafeita.Quantidade = (int)numericQuant.Value;
                 listBox2.Items.Add(vendafeita);
                 extrato.Add(vendafeita);
@@ -111,9 +111,9 @@ namespace cantina_1._0
             string nomeCliente = textBox1.Text;
             string datahora = DateTime.Now.ToString("dd//MM/yyyy  HH: mm:ss");
             string tempo = $"Data e Horário: {datahora}";
-            
 
-            if (string.IsNullOrEmpty(nomeCliente) )
+
+            if (string.IsNullOrEmpty(nomeCliente))
             {
                 MessageBox.Show("Sem cliente cadastrado");
                 return;
@@ -127,7 +127,7 @@ namespace cantina_1._0
 
             while (dinheiroInt < total)
             {
-                
+
                 if (comboBox1.SelectedIndex != 3)
                 {
                     if (viagem.Checked)
@@ -195,7 +195,7 @@ namespace cantina_1._0
                         Produtos: {extratop}
                         Total: R$ {total} 
                         
-                        { tempo}");
+                        {tempo}");
                     }
                     else
                     {
@@ -213,25 +213,25 @@ namespace cantina_1._0
                     }
                 }
 
-            comboBox1.SelectedIndex = -1;
-            listBox2.Items.Clear();
+                comboBox1.SelectedIndex = -1;
+                listBox2.Items.Clear();
                 textBox1.Clear();
                 viagem.Checked = false;
-            lbltotal.Text = @$"TOTAL: R$ {total = 0}";
+                lbltotal.Text = @$"TOTAL: R$ {total = 0}";
                 break;
             }
-            
 
 
 
 
-            }
-                   
+
+        }
 
 
-            
-            
-   
+
+
+
+
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -298,6 +298,12 @@ namespace cantina_1._0
         private void valorTroco(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Balcao balcao = new Balcao();
+            balcao.Show();
         }
     }
 }
