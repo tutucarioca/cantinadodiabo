@@ -46,7 +46,7 @@
             label4 = new Label();
             comboBox1 = new ComboBox();
             label6 = new Label();
-            viagem = new CheckBox();
+            checkBox1 = new CheckBox();
             button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericQuant).BeginInit();
@@ -240,17 +240,17 @@
             label6.Text = "Quantidade";
             label6.Click += label6_Click;
             // 
-            // viagem
+            // checkBox1
             // 
-            viagem.AutoSize = true;
-            viagem.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            viagem.ForeColor = SystemColors.ButtonHighlight;
-            viagem.Location = new Point(621, 338);
-            viagem.Name = "viagem";
-            viagem.Size = new Size(64, 20);
-            viagem.TabIndex = 21;
-            viagem.Text = "Viagem";
-            viagem.UseVisualStyleBackColor = true;
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Agrandir Narrow", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkBox1.ForeColor = SystemColors.ButtonHighlight;
+            checkBox1.Location = new Point(621, 338);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(64, 20);
+            checkBox1.TabIndex = 21;
+            checkBox1.Text = "Viagem";
+            checkBox1.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -264,14 +264,14 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
-            // venda
+            // pedido
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(17, 25, 12);
             ClientSize = new Size(800, 450);
             Controls.Add(button4);
-            Controls.Add(viagem);
+            Controls.Add(checkBox1);
             Controls.Add(label6);
             Controls.Add(comboBox1);
             Controls.Add(label4);
@@ -289,7 +289,7 @@
             Controls.Add(button1);
             Controls.Add(listBox2);
             Controls.Add(pictureBox1);
-            Name = "venda";
+            Name = "pedido";
             Text = "Form1";
             TransparencyKey = Color.FromArgb(64, 64, 64);
             Load += Form1_Load;
@@ -319,7 +319,7 @@
         private Label label4;
         private ComboBox comboBox1;
         private Label label6;
-        private CheckBox viagem;
+        private CheckBox checkBox1;
         private Button button4;
     }
 }

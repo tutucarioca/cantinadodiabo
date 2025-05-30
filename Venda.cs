@@ -11,8 +11,16 @@ namespace cantina_1._0
         string nomeCliente;
         string data;
         string pagamento;
-        List<pedido> pedidos;
+        public List<pedido> pedidos = new List<pedido>();
         string isviagem;
         string status;
+
+        public Venda(string nomeCliente, string pagamento, string isviagem)
+        {
+            this.pedidos = new List<pedido>();
+            this.nomeCliente = nomeCliente;
+            this.pagamento = pagamento;
+            this.isviagem = isviagem;
+        }
     }
 }

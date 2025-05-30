@@ -35,6 +35,12 @@ namespace cantina_1._0
             set { chapa = value; }
         }
 
+        public string Cliente
+        {
+            get { return cliente; }
+            set { cliente = value; }
+        }
+
 
         public Descricao(string nome, double valor, bool chapa)
         {

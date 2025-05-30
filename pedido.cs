@@ -111,6 +111,9 @@ namespace cantina_1._0
             string nomeCliente = textBox1.Text;
             string datahora = DateTime.Now.ToString("dd//MM/yyyy  HH: mm:ss");
             string tempo = $"Data e Horário: {datahora}";
+            string viagem = string.Empty;
+
+            Venda venda = new Venda(textBox1.Text, comboBox1.SelectedIndex.ToString(), viagem);
 
 
             if (string.IsNullOrEmpty(nomeCliente))
@@ -130,37 +133,26 @@ namespace cantina_1._0
 
                 if (comboBox1.SelectedIndex != 3)
                 {
-                    if (viagem.Checked)
+                    if (checkBox1.Checked)
                     {
+                        viagem = "para viagem";
+                    }
+                    else
+                    {
+                        viagem = "comer aqui";
+                    }
                         string extratop = string.Join("\n", extrato);
                         MessageBox.Show($@"
                     Dados do Pedido:
-                    PARA VIAGEM
 
                     Cliente:{nomeCliente}
                     Metódo de Pagamento: {metododepagamento}
                     Produtos: {extratop}
                     Total: R$ {total}
+                    {viagem}
                    
                     {tempo}");
                     }
-
-
-                    else
-                    {
-                        string extratop = string.Join("\n", extrato);
-                        MessageBox.Show(@$"
-                    Dados do Pedido:
-
-                    Cliente:{nomeCliente}
-                    Metódo de Pagamento: {metododepagamento}
-                    Produtos: {extratop}
-                    Total: R$ {total}
-
-                    {tempo}");
-                    }
-                }
-
 
                 else if (comboBox1.SelectedIndex == 3)
                 {
@@ -183,8 +175,7 @@ namespace cantina_1._0
                     {
                         MessageBox.Show("Valor inválido.");
                     }
-                    if (viagem.Checked)
-                    {
+                    
                         string extratop = string.Join("\n", extrato);
                         MessageBox.Show(@$"
                         Dados do Pedido:
@@ -193,30 +184,17 @@ namespace cantina_1._0
                         Cliente:{nomeCliente}
                         Metódo de Pagamento: {metododepagamento}
                         Produtos: {extratop}
-                        Total: R$ {total} 
+                        Total: R$ {total}
+                        {viagem}
                         
                         {tempo}");
-                    }
-                    else
-                    {
-
-                        string extratop = string.Join("\n", extrato);
-                        MessageBox.Show(@$"
-                        Dados do Pedido:
-
-                        Cliente:{nomeCliente}
-                        Metódo de Pagamento: {metododepagamento}
-                        Produtos: {extratop}
-                        Total: R$ {total} 
-                        
-                        {tempo}");
-                    }
+                   
                 }
 
                 comboBox1.SelectedIndex = -1;
                 listBox2.Items.Clear();
                 textBox1.Clear();
-                viagem.Checked = false;
+                checkBox1.Checked = false;
                 lbltotal.Text = @$"TOTAL: R$ {total = 0}";
                 break;
             }

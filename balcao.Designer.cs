@@ -31,6 +31,9 @@
             pictureBox1 = new PictureBox();
             listBalcao = new ListBox();
             listPronto = new ListBox();
+            label1 = new Label();
+            label2 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -47,7 +50,7 @@
             // 
             listBalcao.FormattingEnabled = true;
             listBalcao.ItemHeight = 15;
-            listBalcao.Location = new Point(27, 165);
+            listBalcao.Location = new Point(30, 174);
             listBalcao.Name = "listBalcao";
             listBalcao.Size = new Size(249, 184);
             listBalcao.TabIndex = 1;
@@ -57,10 +60,43 @@
             // 
             listPronto.FormattingEnabled = true;
             listPronto.ItemHeight = 15;
-            listPronto.Location = new Point(416, 165);
+            listPronto.Location = new Point(428, 174);
             listPronto.Name = "listPronto";
             listPronto.Size = new Size(249, 184);
             listPronto.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Agrandir Narrow", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ControlLightLight;
+            label1.Location = new Point(99, 146);
+            label1.Name = "label1";
+            label1.Size = new Size(76, 25);
+            label1.TabIndex = 3;
+            label1.Text = "Pedidos";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Agrandir Narrow", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ControlLightLight;
+            label2.Location = new Point(511, 146);
+            label2.Name = "label2";
+            label2.Size = new Size(94, 25);
+            label2.TabIndex = 4;
+            label2.Text = "Entregues";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(230, 255, 0);
+            button1.Font = new Font("Agrandir Narrow", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.Location = new Point(272, 394);
+            button1.Name = "button1";
+            button1.Size = new Size(229, 44);
+            button1.TabIndex = 5;
+            button1.Text = "Entregar";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Balcao
             // 
@@ -68,6 +104,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(17, 25, 12);
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(listPronto);
             Controls.Add(listBalcao);
             Controls.Add(pictureBox1);
@@ -76,6 +115,7 @@
             Load += balcao_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -83,5 +123,8 @@
         private PictureBox pictureBox1;
         private ListBox listBalcao;
         private ListBox listPronto;
+        private Label label1;
+        private Label label2;
+        private Button button1;
     }
 }
