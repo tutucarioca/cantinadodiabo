@@ -8,12 +8,23 @@ namespace cantina_1._0
 {
     internal class Venda
     {
-        string nomeCliente;
+        private string nomeCliente;
         string data;
         string pagamento;
         public List<pedido> pedidos = new List<pedido>();
         string isviagem;
-        string status;
+        private status status;
+
+        public string NomeCliente
+        {
+            get { return nomeCliente; }
+            set { nomeCliente = value; }
+        }
+        public status Status
+        {
+            get { return status; }
+            set { status = value; }
+        }
 
         public Venda(string nomeCliente, string pagamento, string isviagem)
         {

@@ -20,11 +20,25 @@ namespace cantina_1._0
         private void balcao_Load(object sender, EventArgs e)
         {
 
+
         }
 
         private void listBalcao_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (listPronto.Items.Count == 5)
+            {
+                listPronto.Items.RemoveAt(4);
+            }
         }
     }
 }

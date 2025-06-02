@@ -60,7 +60,7 @@
             // 
             listPronto.FormattingEnabled = true;
             listPronto.ItemHeight = 15;
-            listPronto.Location = new Point(428, 174);
+            listPronto.Location = new Point(444, 174);
             listPronto.Name = "listPronto";
             listPronto.Size = new Size(249, 184);
             listPronto.TabIndex = 2;
@@ -70,7 +70,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Agrandir Narrow", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(99, 146);
+            label1.Location = new Point(101, 146);
             label1.Name = "label1";
             label1.Size = new Size(76, 25);
             label1.TabIndex = 3;
@@ -81,7 +81,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Agrandir Narrow", 14.2499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(511, 146);
+            label2.Location = new Point(522, 146);
             label2.Name = "label2";
             label2.Size = new Size(94, 25);
             label2.TabIndex = 4;
@@ -97,6 +97,7 @@
             button1.TabIndex = 5;
             button1.Text = "Entregar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Balcao
             // 
