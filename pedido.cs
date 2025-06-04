@@ -115,9 +115,9 @@ namespace cantina_1._0
             string tempo = $"Data e Horário: {datahora}"; //variavel do tempo com data e horario
             string viagem = string.Empty; //
 
-            Venda venda = new Venda(textBox1.Text, comboBox1.SelectedIndex.ToString(), viagem);
+            
             List<Descricao> pedido = listBox2.Items.Cast<Descricao>().ToList();
-            venda.NomeCliente = textBox1.Text;
+            venda.nomeCliente = textBox1.Text;
             
             if (string.IsNullOrEmpty(nomeCliente))
             {
@@ -144,8 +144,8 @@ namespace cantina_1._0
                     {
                         viagem = "comer aqui";
                     }
-                        string extratop = string.Join("\n", extrato);
-                        MessageBox.Show($@"
+                    string extratop = string.Join("\n", extrato);
+                    MessageBox.Show($@"
                     Dados do Pedido:
 
                     Cliente:{nomeCliente}
@@ -155,7 +155,7 @@ namespace cantina_1._0
                     {viagem}
                    
                     {tempo}");
-                    }
+                }
 
                 else if (comboBox1.SelectedIndex == 3)
                 {
@@ -178,9 +178,9 @@ namespace cantina_1._0
                     {
                         MessageBox.Show("Valor inválido.");
                     }
-                    
-                        string extratop = string.Join("\n", extrato);
-                        MessageBox.Show(@$"
+
+                    string extratop = string.Join("\n", extrato);
+                    MessageBox.Show(@$"
                         Dados do Pedido:
                         PARA VIAGEM
 
@@ -191,7 +191,7 @@ namespace cantina_1._0
                         {viagem}
                         
                         {tempo}");
-                   
+
                 }
 
                 comboBox1.SelectedIndex = -1;
@@ -200,6 +200,23 @@ namespace cantina_1._0
                 checkBox1.Checked = false;
                 lbltotal.Text = @$"TOTAL: R$ {total = 0}";
                 break;
+
+                
+
+                
+            }
+            foreach (pedido pedidos in listBox2.Items)
+            {
+
+            }
+            Venda venda = new Venda(nomeCliente, datahora, metododepagamento, viagem, List<pedido> pedido, status.PREPARANDO);
+
+            status statusPedido = status.PREPARANDO;
+
+            Venda novoPedido = new Venda()
+            {
+                    nomeCliente,
+
             }
 
 

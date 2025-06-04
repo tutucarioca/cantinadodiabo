@@ -3,35 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic;
 
 namespace cantina_1._0
 {
-    internal class Venda
+    public class Venda
     {
-        private string nomeCliente;
-        string data;
-        string pagamento;
+        public string nomeCliente;
+        public string Data;
+        public string pagamento;
         public List<pedido> pedidos = new List<pedido>();
-        string isviagem;
-        private status status;
+        public string isviagem;
+        public status status;
 
-        public string NomeCliente
+        public Venda(string nomeCliente,string data, string pagamento, string isviagem, List<pedido> pedidos, status status)
         {
-            get { return nomeCliente; }
-            set { nomeCliente = value; }
-        }
-        public status Status
-        {
-            get { return status; }
-            set { status = value; }
-        }
-
-        public Venda(string nomeCliente, string pagamento, string isviagem)
-        {
-            this.pedidos = new List<pedido>();
             this.nomeCliente = nomeCliente;
-            this.pagamento = pagamento;
+            this.Data = data;
             this.isviagem = isviagem;
+            this.status = status;
         }
     }
 }
