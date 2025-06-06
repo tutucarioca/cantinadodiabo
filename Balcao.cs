@@ -25,7 +25,12 @@ namespace cantina_1._0
 
         private void listBalcao_SelectedIndexChanged(object sender, EventArgs e)
         {
+            foreach(Venda venda in PersistenciaPedido.Pedidos)
+                if(venda.status == status.PRONTO)
+                {
 
+                }
+                
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)

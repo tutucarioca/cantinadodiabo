@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
-            listBalcao = new ListBox();
-            listPronto = new ListBox();
+            listBalcao = new System.Windows.Forms.ListBox();
+            listPronto = new System.Windows.Forms.ListBox();
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
@@ -122,8 +122,8 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private ListBox listBalcao;
-        private ListBox listPronto;
+        private System.Windows.Forms.ListBox listBalcao;
+        private System.Windows.Forms.ListBox listPronto;
         private Label label1;
         private Label label2;
         private Button button1;

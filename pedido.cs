@@ -108,7 +108,7 @@ namespace cantina_1._0
 
         private void button3_Click(object sender, EventArgs e)
         {
-            double dinheiroInt = 0; //varioavel do valor que o cliente coloca se for dinheiro
+            double dinheiroInt = 0; //variavel do valor que o cliente coloca se for dinheiro
             double troco = 0; //variavel do troco que ele recebe
             string nomeCliente = textBox1.Text; //variavel do nome do cliente
             string datahora = DateTime.Now.ToString("dd//MM/yyyy  HH: mm:ss"); //variavel da data e hora. dia/ mes/ ano. hora: minuto: segundo
@@ -117,7 +117,7 @@ namespace cantina_1._0
 
             
             List<Descricao> pedido = listBox2.Items.Cast<Descricao>().ToList();
-            venda.nomeCliente = textBox1.Text;
+            
             
             if (string.IsNullOrEmpty(nomeCliente))
             {
@@ -194,30 +194,31 @@ namespace cantina_1._0
 
                 }
 
-                comboBox1.SelectedIndex = -1;
-                listBox2.Items.Clear();
-                textBox1.Clear();
-                checkBox1.Checked = false;
-                lbltotal.Text = @$"TOTAL: R$ {total = 0}";
+               
                 break;
 
                 
 
                 
             }
-            foreach (pedido pedidos in listBox2.Items)
-            {
 
-            }
-            Venda venda = new Venda(nomeCliente, datahora, metododepagamento, viagem, List<pedido> pedido, status.PREPARANDO);
 
-            status statusPedido = status.PREPARANDO;
+            bool Chapa = false;
+            if (Chapa)
+            { 
+            status statusPedido = status.PRONTO;
+            //var venda = new Venda(nomeCliente, datahora, metododepagamento, viagem, new List<Venda>() , statusPedido); continuar segunda
+            
+            
+                    
+            };
 
-            Venda novoPedido = new Venda()
-            {
-                    nomeCliente,
 
-            }
+            comboBox1.SelectedIndex = -1;
+            listBox2.Items.Clear();
+            textBox1.Clear();
+            checkBox1.Checked = false;
+            lbltotal.Text = @$"TOTAL: R$ {total = 0}";
 
 
 

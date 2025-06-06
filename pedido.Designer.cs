@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
-            listBox2 = new ListBox();
+            listBox1 = new System.Windows.Forms.ListBox();
+            listBox2 = new System.Windows.Forms.ListBox();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -40,7 +40,7 @@
             dateTimePicker2 = new DateTimePicker();
             pictureBox1 = new PictureBox();
             numericQuant = new NumericUpDown();
-            listBox3 = new ListBox();
+            listBox3 = new System.Windows.Forms.ListBox();
             label3 = new Label();
             textBox1 = new TextBox();
             label4 = new Label();
@@ -301,8 +301,8 @@
 
         #endregion
 
-        private ListBox listBox1;
-        private ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
         private Button button1;
         private Button button2;
         private Button button3;
@@ -313,7 +313,7 @@
         private DateTimePicker dateTimePicker2;
         private PictureBox pictureBox1;
         private NumericUpDown numericQuant;
-        private ListBox listBox3;
+        private System.Windows.Forms.ListBox listBox3;
         private Label label3;
         private TextBox textBox1;
         private Label label4;

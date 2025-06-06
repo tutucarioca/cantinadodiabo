@@ -12,11 +12,12 @@ namespace cantina_1._0
         public string nomeCliente;
         public string Data;
         public string pagamento;
-        public List<pedido> pedidos = new List<pedido>();
+        public List<Descricao> pedidos = new List<Descricao>();
         public string isviagem;
         public status status;
 
-        public Venda(string nomeCliente,string data, string pagamento, string isviagem, List<pedido> pedidos, status status)
+        public Venda(string nomeCliente, string data, string pagamento, string isviagem, List<pedido> pedidos, status status)
+
         {
             this.nomeCliente = nomeCliente;
             this.Data = data;
@@ -25,3 +26,4 @@ namespace cantina_1._0
         }
     }
 }
+    
