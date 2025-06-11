@@ -64,3 +64,22 @@ C:\Users\25163133\Documents\Nova pasta\cantinadodiabo\obj\Debug\net8.0-windows\r
 C:\Users\25163133\Documents\Nova pasta\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.pdb
 C:\Users\25163133\Documents\Nova pasta\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.genruntimeconfig.cache
 C:\Users\25163133\Documents\Nova pasta\cantinadodiabo\obj\Debug\net8.0-windows\ref\cantina 1.0.dll
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\bin\Debug\net8.0-windows\cantina 1.0.exe
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\bin\Debug\net8.0-windows\cantina 1.0.deps.json
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\bin\Debug\net8.0-windows\cantina 1.0.runtimeconfig.json
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\bin\Debug\net8.0-windows\cantina 1.0.dll
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\bin\Debug\net8.0-windows\cantina 1.0.pdb
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina_1._0.Balcao.resources
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina_1._0.pedido.resources
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina_1._0.Properties.Resources.resources
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.csproj.GenerateResource.cache
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.AssemblyInfoInputs.cache
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.AssemblyInfo.cs
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.csproj.CoreCompileInputs.cache
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.sourcelink.json
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.dll
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\refint\cantina 1.0.dll
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.pdb
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\cantina 1.0.genruntimeconfig.cache
+C:\Users\25163133\Documents\quartoubb\cantinadodiabo\obj\Debug\net8.0-windows\ref\cantina 1.0.dll

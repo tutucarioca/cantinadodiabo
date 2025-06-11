@@ -12,6 +12,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace cantina_1._0
 {
+    private void ListarCarrinho()
+    {
+        foreach(Venda in )
+    }
     public partial class pedido : Form
     {
         public pedido()
@@ -203,15 +207,12 @@ namespace cantina_1._0
             }
 
 
-            bool Chapa = false;
-            if (Chapa)
-            { 
-            status statusPedido = status.PRONTO;
-            //var venda = new Venda(nomeCliente, datahora, metododepagamento, viagem, new List<Venda>() , statusPedido); continuar segunda
-            
-            
-                    
-            };
+            bool pedidoChapa = listBox2.Any(p => p.Chapa);
+            status pedidoStatus = pedidoChapa ? status.PREPARANDO : status.PRONTO;
+
+            var novoPedido = new Pedido(Cliente, metododepagamento, DateTime.Now, viagem, new List<Itens>(carrinho), pedidoStatus);
+            PesistenciaPedido.pedidoFinalizado.Add(novoPedido);
+
 
 
             comboBox1.SelectedIndex = -1;
