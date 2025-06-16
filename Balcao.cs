@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -10,6 +11,7 @@ using System.Windows.Forms;
 
 namespace cantina_1._0
 {
+ 
     public partial class Balcao : Form
     {
         public Balcao()
@@ -20,18 +22,18 @@ namespace cantina_1._0
         private void balcao_Load(object sender, EventArgs e)
         {
 
-
-        }
-
-        private void listBalcao_SelectedIndexChanged(object sender, EventArgs e)
-        {
             foreach (Venda venda in PersistenciaPedido.Pedidos)
                 if (venda.status == status.PRONTO)
                     listBalcao.Items.Add(venda);
                 else
                 {
-                    listPronto.Items.Add(venda);   
+                    listPronto.Items.Add(venda);
                 }
+        }
+
+        private void listBalcao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
                 
                 
         }

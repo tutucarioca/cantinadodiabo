@@ -9,14 +9,14 @@ namespace cantina_1._0
 {
     public class Venda
     {
-        public string nomeCliente;
-        public string Data;
-        public string pagamento;
-        public List<Descricao> pedidos = new List<Descricao>();
-        public string isviagem;
-        public status status;
+        public string nomeCliente { get; set; }
+        public string Data { get; set; }
+        public string pagamento { get; set; }
+        public string isviagem { get; set; }
+        public List<Descricao> pedidos { get; set; }
+        public status status { get; set; }
 
-        public Venda(string nomeCliente, string data, string pagamento, string isviagem, List<pedido> pedidos, status status)
+        public Venda(string nomeCliente, string data, string pagamento, string isviagem, List<Descricao> pedidos, status status)
 
         {
             this.nomeCliente = nomeCliente;

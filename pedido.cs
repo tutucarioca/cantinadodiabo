@@ -12,10 +12,6 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace cantina_1._0
 {
-    private void ListarCarrinho()
-    {
-        foreach(Venda in )
-    }
     public partial class pedido : Form
     {
         public pedido()
@@ -27,6 +23,15 @@ namespace cantina_1._0
         double total = 0; //valor total da compra iniciado no 0
 
         public string metododepagamento;
+
+        private void ListarCarrinho()
+        {
+            listBox2.Items.Clear();
+            foreach (var carrinho in extrato)
+            {
+                listBox2.Items.Add(carrinho);
+            }
+        }
 
 
 
@@ -207,11 +212,13 @@ namespace cantina_1._0
             }
 
 
-            bool pedidoChapa = listBox2.Any(p => p.Chapa);
+            bool pedidoChapa = extrato.Any(p => p.Chapa);
             status pedidoStatus = pedidoChapa ? status.PREPARANDO : status.PRONTO;
 
-            var novoPedido = new Pedido(Cliente, metododepagamento, DateTime.Now, viagem, new List<Itens>(carrinho), pedidoStatus);
-            PesistenciaPedido.pedidoFinalizado.Add(novoPedido);
+            var venda = new Venda(nomeCliente, datahora, metododepagamento, viagem, pedido, pedidoStatus);
+            PersistenciaPedido.Pedidos.Add(venda); //adiciona o pedido na persistencia   
+
+
 
 
 

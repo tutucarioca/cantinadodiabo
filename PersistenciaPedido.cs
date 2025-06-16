@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace cantina_1._0
 {
-    static class PersistenciaPedido
+    public static class PersistenciaPedido
     {
-       public static List<Venda> Pedidos = new List<Venda>();
+        public static List<Venda> Pedidos { get; set; } = new List<Venda>();
     }
 }
