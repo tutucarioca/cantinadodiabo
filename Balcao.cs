@@ -25,7 +25,7 @@ namespace cantina_1._0
             foreach (Venda venda in PersistenciaPedido.Pedidos)
                 if (venda.status == status.PRONTO)
                     listBalcao.Items.Add(venda);
-                else
+                else if(venda.status == status.ENTREGUE)
                 {
                     listPronto.Items.Add(venda);
                 }
@@ -45,10 +45,24 @@ namespace cantina_1._0
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (listPronto.Items.Count == 5)
+            Venda pedidoSelecionado = (Venda)listBalcao.SelectedItem;
+
+            if (listBalcao.SelectedItem != null)
             {
-                listPronto.Items.RemoveAt(4);
+                if (listPronto.Items.Count == 5)
+                {
+                    listPronto.Items.RemoveAt(4);
+                }
+                pedidoSelecionado.status = status.ENTREGUE;
+                listPronto.Items.Insert(0, listBalcao.SelectedItem);
+
+                listBalcao.Items.RemoveAt(listBalcao.SelectedIndex);
             }
+            else
+            {
+                MessageBox.Show("Selecione um Item para entregar: ");
+            }
+           
         }
     }
 }
