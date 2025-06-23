@@ -25,10 +25,14 @@ namespace cantina_1._0
             foreach (Venda venda in PersistenciaPedido.Pedidos)
                 if (venda.status == status.PRONTO)
                     listBalcao.Items.Add(venda);
-                else if(venda.status == status.ENTREGUE)
+              else if(venda.status == status.PREPARANDO)
                 {
-                    listPronto.Items.Add(venda);
+
                 }
+                else if(venda.status == status.ENTREGUE)
+                    listPronto.Items.Add(venda);
+                
+           
         }
 
         private void listBalcao_SelectedIndexChanged(object sender, EventArgs e)

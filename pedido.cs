@@ -17,12 +17,11 @@ namespace cantina_1._0
         public pedido()
         {
             InitializeComponent();
-        }
+     }
 
         List<Descricao> extrato = new List<Descricao>(); //lista da classe descricao para fazer o extrato
         double total = 0; //valor total da compra iniciado no 0
 
-        public string metododepagamento;
 
         private void ListarCarrinho()
         {
@@ -68,6 +67,8 @@ namespace cantina_1._0
 
         private void button1_Click(object sender, EventArgs e) //adicionar
         {
+            
+
             if (listBox3.SelectedItem != null && numericQuant.Value > 0) //lista de produto vazia e quantidade vazia
             {
                 int quant = (int)numericQuant.Value; //variavel da quantidade
@@ -134,11 +135,12 @@ namespace cantina_1._0
                 return;
             }
 
-            if (string.IsNullOrEmpty(metododepagamento))
+            if (comboBox1.SelectedIndex == -1) //se o metodo de pagamento não for selecionado
             {
                 MessageBox.Show("Selecione uma forma de pagamento");
                 return;
             }
+            var metododepagamento = comboBox1.SelectedItem?.ToString() ?? "(Sem pagamento)";
 
             while (dinheiroInt < total)
             {
@@ -164,6 +166,8 @@ namespace cantina_1._0
                     {viagem}
                    
                     {tempo}");
+              
+
                 }
 
                 else if (comboBox1.SelectedIndex == 3)
@@ -200,10 +204,14 @@ namespace cantina_1._0
                         {viagem}
                         
                         {tempo}");
+                
+                   
+
+
 
                 }
 
-               
+
                 break;
 
                 
@@ -227,7 +235,8 @@ namespace cantina_1._0
             textBox1.Clear();
             checkBox1.Checked = false;
             lbltotal.Text = @$"TOTAL: R$ {total = 0}";
-
+            extrato.Clear(); //limpa o extrato
+            
 
 
 
@@ -272,19 +281,19 @@ namespace cantina_1._0
         {
             if (comboBox1.SelectedIndex == 0)
             {
-                metododepagamento = "Pix";
+                comboBox1.Text = "Pix";
             }
             else if (comboBox1.SelectedIndex == 1)
             {
-                metododepagamento = "Cartão de Débito";
+                comboBox1.Text = "Cartão de Débito";
             }
             else if (comboBox1.SelectedIndex == 2)
             {
-                metododepagamento = "Cartão de Crédito";
+                comboBox1.Text = "Cartão de Crédito";
             }
             else if (comboBox1.SelectedIndex == 3)
             {
-                metododepagamento = "Dinheiro";
+                comboBox1.Text = "Dinheiro";
             }
         }
 
