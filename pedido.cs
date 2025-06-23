@@ -17,11 +17,12 @@ namespace cantina_1._0
         public pedido()
         {
             InitializeComponent();
-     }
+        }
 
         List<Descricao> extrato = new List<Descricao>(); //lista da classe descricao para fazer o extrato
         double total = 0; //valor total da compra iniciado no 0
 
+        public string metododepagamento;
 
         private void ListarCarrinho()
         {
@@ -67,8 +68,6 @@ namespace cantina_1._0
 
         private void button1_Click(object sender, EventArgs e) //adicionar
         {
-            
-
             if (listBox3.SelectedItem != null && numericQuant.Value > 0) //lista de produto vazia e quantidade vazia
             {
                 int quant = (int)numericQuant.Value; //variavel da quantidade
@@ -117,7 +116,7 @@ namespace cantina_1._0
 
 
         private void button3_Click(object sender, EventArgs e)
-        {
+        { 
             double dinheiroInt = 0; //variavel do valor que o cliente coloca se for dinheiro
             double troco = 0; //variavel do troco que ele recebe
             string nomeCliente = textBox1.Text; //variavel do nome do cliente
@@ -140,8 +139,7 @@ namespace cantina_1._0
                 MessageBox.Show("Selecione uma forma de pagamento");
                 return;
             }
-            var metododepagamento = comboBox1.SelectedItem?.ToString() ?? "(Sem pagamento)";
-
+            var formaDePagamento = comboBox1.SelectedItem?.ToString() ?? "(Sem pagamento)";
             while (dinheiroInt < total)
             {
 
@@ -166,8 +164,6 @@ namespace cantina_1._0
                     {viagem}
                    
                     {tempo}");
-              
-
                 }
 
                 else if (comboBox1.SelectedIndex == 3)
@@ -204,14 +200,10 @@ namespace cantina_1._0
                         {viagem}
                         
                         {tempo}");
-                
-                   
-
-
 
                 }
 
-
+               
                 break;
 
                 
@@ -236,7 +228,7 @@ namespace cantina_1._0
             checkBox1.Checked = false;
             lbltotal.Text = @$"TOTAL: R$ {total = 0}";
             extrato.Clear(); //limpa o extrato
-            
+
 
 
 
@@ -293,6 +285,7 @@ namespace cantina_1._0
             }
             else if (comboBox1.SelectedIndex == 3)
             {
+
                 comboBox1.Text = "Dinheiro";
             }
         }

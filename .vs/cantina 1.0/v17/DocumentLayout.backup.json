@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\",
+  "WorkspaceRootPath": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\documents\\finish\\cantinadodiabo\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\balcao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\balcao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:balcao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\documents\\finish\\cantinadodiabo\\descricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:descricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\documents\\finish\\cantinadodiabo\\persistenciapedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:persistenciapedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\documents\\finish\\cantinadodiabo\\balcao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\balcao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:balcao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\documents\\finish\\cantinadodiabo\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\persistenciapedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:persistenciapedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\descricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:descricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\documents\\finish\\cantinadodiabo\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|c:\\users\\25163133\\downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594F366E-ED8F-46DB-8779-970B0CD2027C}|cantina 1.0.csproj|solutionrelative:venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,79 +42,78 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Balcao.cs",
-              "DocumentMoniker": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\Balcao.cs",
+              "DocumentIndex": 1,
+              "Title": "Balcao.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\Balcao.cs",
               "RelativeDocumentMoniker": "Balcao.cs",
-              "ToolTip": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\Balcao.cs",
-              "RelativeToolTip": "Balcao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAARAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\Balcao.cs [Projeto]",
+              "RelativeToolTip": "Balcao.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T12:28:09.118Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T13:50:53.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Balcao.cs",
+              "DocumentMoniker": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\Balcao.cs",
+              "RelativeDocumentMoniker": "Balcao.cs",
+              "ToolTip": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\Balcao.cs",
+              "RelativeToolTip": "Balcao.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowBsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T12:28:09.118Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "pedido.cs",
-              "DocumentMoniker": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\pedido.cs",
+              "DocumentMoniker": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\pedido.cs",
               "RelativeDocumentMoniker": "pedido.cs",
-              "ToolTip": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\pedido.cs*",
-              "RelativeToolTip": "pedido.cs*",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAAwIwAAAAXAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\pedido.cs",
+              "RelativeToolTip": "pedido.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAuwM0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T11:15:58.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Balcao.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\Balcao.cs",
-              "RelativeDocumentMoniker": "Balcao.cs",
-              "ToolTip": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\Balcao.cs [Projeto]",
-              "RelativeToolTip": "Balcao.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T13:50:53.569Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "pedido.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\pedido.cs",
+              "DocumentMoniker": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\pedido.cs",
               "RelativeDocumentMoniker": "pedido.cs",
-              "ToolTip": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\pedido.cs [Projeto]*",
-              "RelativeToolTip": "pedido.cs [Projeto]*",
+              "ToolTip": "C:\\Users\\25163133\\Documents\\quartoubb\\cantinadodiabo\\pedido.cs [Projeto]",
+              "RelativeToolTip": "..\\..\\..\\Documents\\quartoubb\\cantinadodiabo\\pedido.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T11:17:49.289Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-05-19T11:17:49.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Descricao.cs",
-              "DocumentMoniker": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\Descricao.cs",
+              "DocumentMoniker": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\Descricao.cs",
               "RelativeDocumentMoniker": "Descricao.cs",
-              "ToolTip": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\Descricao.cs",
+              "ToolTip": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\Descricao.cs",
               "RelativeToolTip": "Descricao.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T11:51:14.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T11:51:14.638Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Venda.cs",
-              "DocumentMoniker": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\Venda.cs",
+              "DocumentMoniker": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\Venda.cs",
               "RelativeDocumentMoniker": "Venda.cs",
-              "ToolTip": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\Venda.cs",
+              "ToolTip": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\Venda.cs",
               "RelativeToolTip": "Venda.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAcwBwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -124,27 +123,25 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "status.cs",
-              "DocumentMoniker": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\status.cs",
+              "DocumentMoniker": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\status.cs",
               "RelativeDocumentMoniker": "status.cs",
-              "ToolTip": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\status.cs",
+              "ToolTip": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\status.cs",
               "RelativeToolTip": "status.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T13:46:31.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T13:46:31.559Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "PersistenciaPedido.cs",
-              "DocumentMoniker": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\PersistenciaPedido.cs",
+              "DocumentMoniker": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\PersistenciaPedido.cs",
               "RelativeDocumentMoniker": "PersistenciaPedido.cs",
-              "ToolTip": "C:\\Users\\25163133\\Documents\\finish\\cantinadodiabo\\PersistenciaPedido.cs",
+              "ToolTip": "C:\\Users\\25163133\\Downloads\\cantinadodiabo-0.2\\cantinadodiabo-0.2\\PersistenciaPedido.cs",
               "RelativeToolTip": "PersistenciaPedido.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T11:45:04.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T11:45:04.409Z"
             }
           ]
         }
